@@ -10,7 +10,7 @@ public class Event : BaseEntity
     public string Description { get; set;} = string.Empty;
     public int ParticipantsLimit { get; set;} = 50;
     public decimal Price { get; set;} = 0;
-    public int AdministratorId { get; set;}
-    public Administrator? Administrator { get; set;} = null!;
+    public int OrganizerId { get; set;}
+    public Organizer Organizer { get; set;} = null!;
     public List<Participant> Participants { get; set;} = [];
 }

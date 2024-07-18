@@ -1,6 +1,6 @@
 namespace EventsManager.Application.Requests.Organizer;
 
-public class GetAllOrganizersRequest
+public class GetAllOrganizersRequest : PagedRequest
 {
     
 }

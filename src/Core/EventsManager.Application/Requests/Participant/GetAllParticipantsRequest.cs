@@ -1,6 +1,6 @@
 namespace EventsManager.Application.Requests.Participant;
 
-public class GetAllParticipantsRequest
+public class GetAllParticipantsRequest : PagedRequest
 {
     
 }

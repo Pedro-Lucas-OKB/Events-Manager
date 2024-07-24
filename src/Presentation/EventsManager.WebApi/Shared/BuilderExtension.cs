@@ -2,6 +2,7 @@ using EventsManager.Application;
 using EventsManager.Application.Handlers;
 using EventsManager.Persistence.Context;
 using EventsManager.WebApi.Handlers;
+using EventsManager.WebApi.Services;
 using Fina.Api;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -72,5 +73,9 @@ public static class BuilderExtension
         builder
             .Services
             .AddTransient<IParticipantHandler, ParticipantHandler>();
+
+        builder
+            .Services
+            .AddTransient<TokenService>();
     }
 }
